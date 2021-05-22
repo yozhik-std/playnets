@@ -8,7 +8,9 @@ body {
    left: 0;
    bottom: 0;
    right: 0;
-	background-color: black;
+   background: url("../img/fon.png") no-repeat;
+   background-size: cover;
+   background-attachment: fixed;
 }
 
 @font-face {
@@ -19,7 +21,6 @@ body {
 	font-family: GothamR;
 	src: url('../css/14078.ttf');
 }
-  
 .menu {
 	background-color: #1D1F20;
 	position: absolute;
@@ -320,7 +321,6 @@ header {
 .hi {
     display: flex;
     align-items: flex-start;
-    background: url("../img/fon.png") center no-repeat;
     -webkit-background-size: cover;
     background-size: cover;
     width:100%;

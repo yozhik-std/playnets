@@ -8,7 +8,9 @@ body {
    left: 0;
    bottom: 0;
    right: 0;
-	background-color: black;
+	background: url("../img/1.png") center no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
 }
 
 @font-face {
@@ -312,7 +314,6 @@ header {
 .hi {
     display: flex;
     align-items: flex-start;
-    background: url("../img/1.png") center no-repeat;
     -webkit-background-size: cover;
     background-size: cover;
     width:100%;
