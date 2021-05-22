@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Planet2</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+<link rel="stylesheet" href="assets/css/style.css" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+<meta charset="UTF-8">
+</head>
+<body>
+  <div class='preloader'>
+		<div id='galaxy'>
+		  <div class='circle'></div>
+		  <div class='circle2'></div>
+		  <div class='circle3'></div>
+		  <div id='orbit0'>
+			<div id='pos0'>
+			  <div id='dot0'></div>
+			</div>
+		  </div>
+		  <div id='orbit1'>
+			<div id='pos1'>
+			  <div id='dot1'></div>
+			</div>
+		  </div>
+		  <div id='orbit2'>
+			<div id='pos2'>
+			  <div id='dot2'></div>
+			</div>
+		  </div>
+		  <div id='orbit3'>
+			<div id='pos3'>
+			  <div id='dot3'></div>
+			</div>
+		  </div>
+		</div>
+	  </div>
+	  
+    <div class="wrapper">
+        <div class="content">
+            <div class="hi">
+                <div class="container">
+                    <nav class="menu slide_menu">
+                    <ul class="nav_menu">
+                        <li><a class="menu_link" href="#">Главная</a></li>
+                        <span class="menu_link_"><img class="arrow" src="./assets/css/arroww.png"><a class="menu_link_btn" href="#">Планеты</a></span>
+                            <div class="planet_list">
+                                <a class="link_planet" href="#">Меркурий</a>
+                                <a class="link_planet" href="#">Венера</a>
+                                <a class="link_planet" href="#">Земля</a>
+                                <a class="link_planet" href="#">Марс</a>
+                                <a class="link_planet" href="#">Юпитер</a>
+                                <a class="link_planet" href="#">Сатурн</a>
+                                <a class="link_planet" href="#">Уран</a>
+                                <a class="link_planet" href="#">Нептун</a>
+                            </div>
+                        <li><a class="menu_link" href="#">Мой тур</a></li>
+                        <li><a class="menu_link" href="#">Горящий тур</a></li>
+                        <li><a class="menu_link" href="#">Игры</a></li>
+                        <li><a class="menu_link" href="#">Моя планета</a></li>
+                        <li><a class="menu_link" href="#">Контакты</a></li>
+                    </ul>
+                 </nav>
+                 <span class="poloska1"></span>
+                 <span class="poloska2"></span>
+                 <span class="poloska3"></span>
+                 <header>
+                    <div class="header_inner">
+                        <a class="logo" href="#"><img src="./assets/css/logo.png"></a>
+                        <a href="#" class="menu_btn"><span></span></a>
+                    </div>
+                 </header>
+                 <script src="assets/js/app.js"></script>
+                    <div class="hi_row">
+          
+                        <form name="myform" class="form">
+                        <!-- Slideshow container -->
+<div class="slideshow-container">
+
+    <!-- Full-width images with number and caption text -->
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 8</div>
+      <div class="text">
+        <div class="box_row">
+          
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <div class="question">
+          <div class="hi_text_1">Вопрос 1</div>
+          Что Вы чувствуете, когда смотрите на звезды?
+      <div class="answer_row">
+        <div class="answer_input"><input type="radio" name="q1" value="1" id="l1"><label for="l1">Незначительность</label><br></div>
+        <div class="answer_input"><input type="radio" name="q1" value="2" id="l2"><label for="l2">Воодушевление</label><br></div>
+        <div class="answer_input"><input type="radio" name="q1" value="3" id="l3"><label for="l3">Красоту</label><br></div>
+        <div class="answer_input"><input type="radio" name="q1" value="4" id="l31"><label for="l31">Бесконечность</label><br></div>
+        <div class="answer_input"><input type="radio" name="q1" value="5" id="l32"><label for="l32">Одиночество</label><br></div>
+        <div class="answer_input"><input type="radio" name="q1" value="6" id="l33"><label for="l33">Радость</label><br></div>
+      </div>
+    </div>
+    
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  
+    </div>  
+        </div>
+
+    </div>
+    <div class="mySlides fade">
+        <div class="numbertext">2 / 8</div>
+        <div class="text">
+          <div class="box_row">
+          
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <div class="question">
+            <div class="hi_text_1">Вопрос 2</div>
+            Какое качество в Вас преобладает?
+        <div class="answer_row">
+          <div class="answer_input"> <input type="radio" name="q2" value="1" id="l4"><label for="l4">Гибкий ум</label><br></div>
+          <div class="answer_input"><input type="radio" name="q2" value="2" id="l5"><label for="l5">Активность</label><br></div>
+          <div class="answer_input"><input type="radio" name="q2" value="3" id="l6"><label for="l6">Ранимость</label><br></div>
+          <div class="answer_input"> <input type="radio" name="q2" value="4" id="l34"><label for="l34">Мягкость</label><br></div>
+          <div class="answer_input"><input type="radio" name="q2" value="5" id="l35"><label for="l35">Неординарность</label><br></div>
+          <div class="answer_input"><input type="radio" name="q2" value="6" id="l36"><label for="l36">Целеустремленность</label><br></div>
+        </div>
+      </div>  
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          </div>
+          </div>
+  
+      </div>
+
+    <div class="mySlides fade">
+        <div class="numbertext">3 / 8</div>
+        <div class="text">
+          <div class="box_row">
+          
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <div class="question">
+            <div class="hi_text_1">Вопрос 3</div>
+            Какое определение скажет о Вас лучше всего?
+        <div class="answer_row">
+          <div class="answer_input"> <input type="radio" name="q3" value="1" id="l7"><label for="l7">Эмоциональный</label><br></div>
+          <div class="answer_input"><input type="radio" name="q3" value="2" id="l8"><label for="l8">Энергичный, как батарейка</label><br></div>
+          <div class="answer_input"><input type="radio" name="q3" value="3" id="l9"><label for="l9">Убедительный</label><br></div>
+          <div class="answer_input"> <input type="radio" name="q3" value="4" id="l37"><label for="l37">Харизматичный</label><br></div>
+          <div class="answer_input"><input type="radio" name="q3" value="5" id="l38"><label for="l38">Нетерпеливый</label><br></div>
+          <div class="answer_input"><input type="radio" name="q3" value="6" id="l39"><label for="l39">Мечтательный</label><br></div>
+        </div>
+      </div>  
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          </div>
+          </div>
+  
+      </div>
+      <div class="mySlides fade">
+        <div class="numbertext">4 / 8</div>
+        <div class="text">
+          <div class="box_row">
+          
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <div class="question">
+            <div class="hi_text_1">Вопрос 4</div>
+            Что Вам удается больше всего?
+        <div class="answer_row">
+          <div class="answer_input"> <input type="radio" name="q4" value="1" id="l10"><label for="l10">Убеждать</label><br></div>
+          <div class="answer_input"><input type="radio" name="q4" value="2" id="l11"><label for="l11">Добиваться своего</label><br></div>
+          <div class="answer_input"><input type="radio" name="q4" value="3" id="l12"><label for="l12">Быть благодарным</label><br></div>
+          <div class="answer_input"> <input type="radio" name="q4" value="4" id="l40"><label for="l40">Начинать что-то новое</label><br></div>
+          <div class="answer_input"><input type="radio" name="q4" value="5" id="l41"><label for="l41">Разрешать любые споры</label><br></div>
+          <div class="answer_input"><input type="radio" name="q4" value="6" id="l42"><label for="l42">Заканчивать дела с успехом</label><br></div>
+        </div>
+      </div>  
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          </div>
+          </div>
+  
+      </div>
+      <div class="mySlides fade">
+        <div class="numbertext">5 / 8</div>
+        <div class="text">
+          <div class="box_row">
+          
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <div class="question">
+            <div class="hi_text_1">Вопрос 5</div>
+            Какую жизнь Вы бы хотели прожить?
+        <div class="answer_row">
+          <div class="answer_input"> <input type="radio" name="q5" value="1" id="l13"><label for="l13">Без драм</label><br></div>
+          <div class="answer_input"><input type="radio" name="q5" value="2" id="l14"><label for="l14">Роскошную, с деньгами</label><br></div>
+          <div class="answer_input"><input type="radio" name="q5" value="3" id="l15"><label for="l15">Насыщенную</label><br></div>
+          <div class="answer_input"> <input type="radio" name="q5" value="4" id="l43"><label for="l43">Полезную</label><br></div>
+          <div class="answer_input"><input type="radio" name="q5" value="5" id="l44"><label for="l44">Творческую, как художник, поэт</label><br></div>
+          <div class="answer_input"><input type="radio" name="q5" value="6" id="l45"><label for="l45">Запоминающуюся, чтобы остаться в истории</label><br></div>
+        </div>
+      </div> 
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          </div> 
+          </div>
+  
+      </div>
+      <div class="mySlides fade">
+        <div class="numbertext">6 / 8</div>
+        <div class="text">
+          <div class="box_row">
+          
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <div class="question">
+            <div class="hi_text_1">Вопрос 6</div>
+            Вас охватывает чувство радости, когда вы:
+        <div class="answer_row">
+          <div class="answer_input"> <input type="radio" name="q6" value="1" id="l16"><label for="l16">Заводите новый роман</label><br></div>
+          <div class="answer_input"><input type="radio" name="q6" value="2" id="l17"><label for="l17">Узнаете что-то новое</label><br></div>
+          <div class="answer_input"><input type="radio" name="q6" value="3" id="l18"><label for="l18">Отдыхаете дома</label><br></div>
+          <div class="answer_input"> <input type="radio" name="q6" value="4" id="l46"><label for="l46">Встречаетесь с друзьями</label><br></div>
+          <div class="answer_input"><input type="radio" name="q6" value="5" id="l47"><label for="l47">Выигрываете в соревновании</label><br></div>
+          <div class="answer_input"><input type="radio" name="q6" value="6" id="l48"><label for="l48">Гуляете в одиночестве</label><br></div>
+        </div>
+      </div>  
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          </div>
+          </div>
+  
+      </div>
+      <div class="mySlides fade">
+        <div class="numbertext">7 / 8</div>
+        <div class="text">
+          <div class="box_row">
+          
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <div class="question">
+            <div class="hi_text_1">Вопрос 7</div>
+            Как относятся к Вам знакомые и родные?
+        <div class="answer_row">
+          <div class="answer_input"> <input type="radio" name="q7" value="1" id="l19"><label for="l19">Как к очень легкому и ранимому человеку</label><br></div>
+          <div class="answer_input"><input type="radio" name="q7" value="2" id="l20"><label for="l20"> Как к человеку, который обвиняет всех вокруг и злится при этом</label><br></div>
+          <div class="answer_input"><input type="radio" name="q7" value="3" id="l21"><label for="l21">Как к чересчур самоуверенному человеку</label><br></div>
+          <div class="answer_input"> <input type="radio" name="q7" value="4" id="l49"><label for="l49">Считают, что Вы человек-экстрим</label><br></div>
+          <div class="answer_input"><input type="radio" name="q7" value="5" id="l50"><label for="l50">Как к человеку, просчитывающему все наперед</label><br></div>
+          <div class="answer_input"><input type="radio" name="q7" value="6" id="l51"><label for="l51">Как к человеку, который плывет по течению</label><br></div>
+        </div>
+      </div> 
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          </div> 
+          </div>
+  
+      </div>
+      
+      <div class="mySlides fade">
+        <div class="numbertext">8 / 8</div>
+          
+          <a class="prev1" onclick="plusSlides(-1)">&#10094;</a>
+      
+          <div class="question1">
+
+            <a href="#" id="title" class="hi_submit" onclick="check()"><p>ПОКАЗАТЬ</p> <p>РЕЗУЛЬТАТ</p></a>
+            
+        </div>
+        <a class="next1" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+      </div>
+</form>
+
+<script> 
+
+  function check() {
+    var count=0;
+    var q1=document.myform.q1.value;
+    var q2=document.myform.q2.value;
+    var q3=document.myform.q3.value;
+    var q4=document.myform.q4.value;
+    var q5=document.myform.q5.value;
+    var q6=document.myform.q6.value;
+    var q7=document.myform.q7.value;
+    
+    
+
+    if (q1 == "2") count++;
+    if (q2 == "3") count++;
+    if (q3 == "2") count++;
+    if (q4 == "6") count++;
+    if (q5 == "5") count++;
+    if (q6 == "4") count++;
+    if (q7 == "3") count++;
+
+    if (count >= 5) {
+      document.location.href = " https://ekaterinadr.github.io/test1/";
+    } else if (count >= 2) {
+      document.location.href = " https://ekaterinadr.github.io/test2/";
+    } else {
+      document.location.href = "https://ekaterinadr.github.io/test3/";
+    };
+
+  } 
+
+</script>
+      
+  
+    
+  
+  
+  </div>
+  <br>
+  
+  <!-- The dots/circles -->
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+    <span class="dot" onclick="currentSlide(4)"></span>
+    <span class="dot" onclick="currentSlide(5)"></span>
+    <span class="dot" onclick="currentSlide(6)"></span>
+    <span class="dot" onclick="currentSlide(7)"></span>
+    <span class="dot" onclick="currentSlide(8)"></span>
+    <span class="dot" onclick="currentSlide(9)"></span>
+    <span class="dot" onclick="currentSlide(10)"></span>
+    <span class="dot" onclick="currentSlide(11)"></span>
+  </div>
+  <script>
+    window.onload = function () {
+      document.body.classList.add('loaded_hiding');
+      window.setTimeout(function () {
+      document.body.classList.add('loaded');
+      document.body.classList.remove('loaded_hiding');
+      }, 500);
+    }
+    </script>
+  <script src="./assets/js/sl.js"></script>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

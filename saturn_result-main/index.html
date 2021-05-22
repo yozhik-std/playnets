@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Planet</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+<link rel="stylesheet" href="assets/css/style.css" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+<meta charset="UTF-8">
+</head>
+<body>
+    <div class='preloader'>
+		<div id='galaxy'>
+		  <div class='circle'></div>
+		  <div class='circle2'></div>
+		  <div class='circle3'></div>
+		  <div id='orbit0'>
+			<div id='pos0'>
+			  <div id='dot0'></div>
+			</div>
+		  </div>
+		  <div id='orbit1'>
+			<div id='pos1'>
+			  <div id='dot1'></div>
+			</div>
+		  </div>
+		  <div id='orbit2'>
+			<div id='pos2'>
+			  <div id='dot2'></div>
+			</div>
+		  </div>
+		  <div id='orbit3'>
+			<div id='pos3'>
+			  <div id='dot3'></div>
+			</div>
+		  </div>
+		</div>
+	  </div>
+	  
+    <div class="wrapper">
+        <div class="content">
+            <div class="hi">
+                <div class="container">
+                    <nav class="menu slide_menu">
+                    <ul class="nav_menu">
+                        <li><a class="menu_link" href="#">Главная</a></li>
+                        <span class="menu_link_"><img class="arrow" src="./assets/css/arroww.png"><a class="menu_link_btn" href="#">Планеты</a></span>
+                            <div class="planet_list">
+                                <a class="link_planet" href="#">Меркурий</a>
+                                <a class="link_planet" href="#">Венера</a>
+                                <a class="link_planet" href="#">Земля</a>
+                                <a class="link_planet" href="#">Марс</a>
+                                <a class="link_planet" href="#">Юпитер</a>
+                                <a class="link_planet" href="#">Сатурн</a>
+                                <a class="link_planet" href="#">Уран</a>
+                                <a class="link_planet" href="#">Нептун</a>
+                            </div>
+                        <li><a class="menu_link" href="#">Мой тур</a></li>
+                        <li><a class="menu_link" href="#">Горящий тур</a></li>
+                        <li><a class="menu_link" href="#">Игры</a></li>
+                        <li><a class="menu_link" href="#">Моя планета</a></li>
+                        <li><a class="menu_link" href="#">Контакты</a></li>
+                    </ul>
+                </nav>
+                <span class="poloska1"></span>
+                <span class="poloska2"></span>
+                <span class="poloska3"></span>
+                <header>
+                    <div class="header_inner">
+                        <a class="logo" href="#"><img src="./assets/css/logo.png"></a>
+                        <a href="#" class="menu_btn"><span></span></a>
+                    </div>
+                </header>
+                <script src="assets/js/app.js"></script>
+                    <div class="hi_row">
+                        <div class="hi_text">
+                            <div class="hi_text_1">ПОЗДРАВЛЯЕМ!</div>
+                            <div class="hi_text_2">Ваше идеальное путешествие - тур на <span class="colortext"> Cатурн </span></div>
+                        </div>
+                        <div class="hi_slider">
+                            <div class="hi_text_3">Сатурн - самая узнаваемая планета. Причина этого очевидна – кольца. Более того, на сегодняшний день это самая малоизученная планета. </div>
+                            
+                                <a href="#" class="hi_submit">Читать подробнее</a>
+                                <script>
+                                    window.onload = function () {
+                                      document.body.classList.add('loaded_hiding');
+                                      window.setTimeout(function () {
+                                        document.body.classList.add('loaded');
+                                        document.body.classList.remove('loaded_hiding');
+                                      }, 500);
+                                    }
+                                  </script>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

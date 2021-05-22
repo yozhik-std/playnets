@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+	<title>header&menu</title>
+</head>
+<body>
+<nav class="menu slide_menu">
+	<ul class="nav_menu">
+		<li><a class="menu_link" href="../index.html">Главная</a></li>
+		<span class="menu_link_"><img class="arrow" src="style/arroww.png"><a class="menu_link_btn" href="#">Планеты</a></span>
+			<div class="planet_list">
+				<a class="link_planet" href="../mercury-main/index.html">Меркурий</a>
+				<a class="link_planet" href="../venus_-main/index.html">Венера</a>
+				<a class="link_planet" href="../earth-main/index.html">Земля</a>
+				<a class="link_planet" href="../mars_-main/index.html">Марс</a>
+				<a class="link_planet" href="../jupiter-main/index.html">Юпитер</a>
+				<a class="link_planet" href="../saturn-main/index.html">Сатурн</a>
+				<a class="link_planet" href="../uranus-main/index.html">Уран</a>
+				<a class="link_planet" href="../neptun_2-main/index.html">Нептун</a>
+			</div>
+		<li><a class="menu_link" href="#">Мой тур</a></li>
+		<li><a class="menu_link" href="#">Горящий тур</a></li>
+		<li><a class="menu_link" href="#">Игры</a></li>
+		<li><a class="menu_link" href="#">Моя планета</a></li>
+		<li><a class="menu_link" href="#">Контакты</a></li>
+	</ul>
+</nav>
+<span class="poloska1"></span>
+<span class="poloska2"></span>
+<span class="poloska3"></span>
+<header>
+	<div class="header_inner">
+		<a class="logo" href="../index.html"><img src="style/logo.png"></a>
+		<a href="#" class="menu_btn"><span></span></a>
+	</div>
+</header>
+<div class="CarGame">
+	<div class="arrow_up"></div>
+	<div class="arrow_left"></div>
+	<div class="GameArea"></div>
+	<div class="arrow_down"></div>
+	<div class="arrow_right"></div>
+	<div class="wrapper">
+		<div class="Score"></div>
+	<div class="StartScreen">
+		 <p>Чтобы играть, нажмите сюда<br>Стрелки для управления<br>Вы проиграете, если столкнётесь с метеоритом</p>
+		 <button onclick="Reset()">Очистить рекорд</button>
+	</div>
+	</div>
+</div>       
+<script src="app.js"></script>
+</body>
+</html>

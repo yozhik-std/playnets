@@ -1,0 +1,487 @@
+body {
+	margin: 0;
+	line-height: 1.6;
+	overflow: hidden;
+	position: fixed;
+   top: 0;
+   left: 0;
+   bottom: 0;
+   right: 0;
+	background: url('style/fon.png');
+}
+
+@font-face {
+	font-family: GothamM;
+	src: url('style/ofont.ru_Gotham\ Pro.ttf');
+}
+@font-face {
+	font-family: GothamR;
+	src: url('style/14078.ttf');
+}
+  
+.menu {
+	background-color: #1D1F20;
+	position: absolute;
+	z-index: 20;
+	top: 0;
+	bottom: 0;
+	right: 0;
+}
+.slide_menu {
+	width: 325px;
+	min-height: 100vh;
+	transition: 0.4s;
+	opacity: 0;
+	transform-origin: right;
+	transform: scaleX(0);
+}
+.nav_menu {
+	max-width: 260px;
+	padding: 0;
+	margin: 130px 25px;
+   list-style: none;
+}
+li {
+	display: list-item;
+   text-align: -webkit-match-parent;
+}
+.menu_link_btn, .menu_link{
+	font-size: 20px;
+	font-family: GothamM;
+	color: white;
+	text-decoration: none;
+	letter-spacing: 2px;
+	transition: 0.1s;
+}
+.menu_link {
+	margin: 15px 19.5px;
+	display: block;
+}
+.menu_link_btn{
+	transition: 0.1s;
+}
+.menu_link:hover, .menu_link_btn:hover{
+	color: #ecdf89;
+	text-shadow: 0 0 2px #fdee8e;
+	padding: 15px;
+}
+	
+.link_planet{
+	font-size: 20px;
+	font-family: GothamM;
+	color: white;
+	text-decoration: none;
+	letter-spacing: 2px;
+	margin: 0 35px;
+	display: block;
+}
+.link_planet:hover{
+	color: #ecdf89;
+	text-shadow: 0 0 2px #fdee8e;
+	padding: 7px;
+}
+.planet_list{
+	transform: scaleY(0);
+	transition: 0.2s;
+	position: absolute;
+	transform-origin: top;
+}
+.planet_list_active{
+	transform: scaleY(1);
+	position: static;
+}
+.arrow{
+	height: 16px;
+	margin-right: 8px;
+	margin-bottom: -1px;
+	transition: 0.2s;
+}
+.arrow_active{
+	transform: rotate(90deg);
+}
+
+.slide_menu_active {
+	transform: scaleX(1);
+	opacity: 1;
+}
+.poloska1, .poloska2, .poloska3{
+	position: absolute;
+	background-color: white;
+	transform: rotate(-26deg) scaleX(0);
+	z-index: 20;
+	transition: 0.2s;
+	transform-origin: right;
+}
+.poloska1{
+	width: 350px;
+	height: 3px;
+	bottom: 21.5vh;
+	right: 8vw;
+}
+.poloska2{
+	width: 430px;
+	height: 7px;
+	bottom: 35vh;
+	right: -3vw;
+}
+.poloska3{
+	width: 230px;
+	height: 5px;
+	bottom: 29.5vh;
+	right: -3vw;
+}
+.poloska_active{
+	transform: rotate(-26deg) scaleX(1);
+	transition: 0.2s;
+	transform-origin: right;
+}
+.poloska_act{
+	transform: rotate(-26deg) scaleX(0);
+}
+
+header {
+	width: 85vw;
+	margin: 0 auto;
+	height: 20vh;
+}
+.header_inner {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	margin: 0 auto;
+}
+.logo{
+	margin: 20px;
+}
+.menu_btn {
+	margin-top: 70px;
+	margin-right: 20px;
+	width: 56px;
+	height: 36px;
+	display: block;
+	position: relative;
+	z-index: 20;
+}
+.menu_btn span,
+.menu_btn span::before,
+.menu_btn span::after{
+	position: absolute;
+	top: 50%; margin-top: -2px;
+	width: 56px;
+	height: 4px;
+	background-color: white;
+}
+.menu_btn span::before,
+.menu_btn span::after{
+	content: '';
+	display: block;
+	transition: 0.4s;
+}
+.menu_btn span::before{
+	transform: translateY(12px);
+}
+.menu_btn span::after{
+	transform: translateY(-12px);
+}
+.menu_btn_active span{
+	height: 0;
+}
+.menu_btn_active span:before{
+	transform: rotate(45deg);
+	height: 3px;
+	width: 50px;
+}
+.menu_btn_active span:after{
+	transform: rotate(-45deg);
+	height: 3px;
+	width: 50px;
+}
+.menu_btn_active {
+	transform: translate(100px);
+}
+
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;        
+}
+.hide{
+	display: none;
+}
+.car{
+	width: 65px;
+	height: 90px;
+	position: absolute;
+	bottom: 20vh;
+	background: url('style/rocket.png');
+	background-size:cover;
+	border-radius: 200px 200px 150px 150px;
+}
+.arrow_up{
+	width: 50px;
+	height: 50px;
+	border-radius: 7px;
+	position: absolute;
+	background: url('style/arrowup.png');
+	bottom: 80px;
+	left: 5px;
+}
+.arrow_down{
+	width: 50px;
+	height: 50px;
+	border-radius: 7px;
+	position: absolute;
+	background: url('style/arrowdown.png');
+	bottom: 80px;
+	right: 5px;
+}
+.arrow_left{
+	width: 50px;
+	height: 50px;
+	border-radius: 7px;
+	position: absolute;
+	background: url('style/arrowleft.png');
+	bottom: 10px;
+	left: 5px;
+}
+.arrow_right{
+	width: 50px;
+	height: 50px;
+	border-radius: 7px;
+	position: absolute;
+	background: url('style/arrowright.png');
+	bottom: 10px;
+	right: 5px;
+}
+.arrow_up, .arrow_down, .arrow_left, .arrow_right{
+	display: none;
+}
+.GameArea{
+	width: 400px;
+	height: 100vh;
+	margin: auto;
+	position: relative;
+	overflow: hidden;
+	border-left: 7px dashed white;
+	border-right: 7px dashed white;
+}
+.lines{
+	width: 10px;
+	height: 100px;
+	background: white;
+	position: absolute;
+	margin-left: 195px;
+}
+.other{
+	width: 60px;
+	height: 92px;
+	background:url('style/meteor_PNG37.png');
+	background-size: cover;
+	border-radius: 110px;
+	position: absolute;
+	bottom: 120px;
+	filter: drop-shadow(0px 0px 18px orange);
+}
+.wrapper{
+	position: absolute;
+	width: 100%;
+	height: 83vh;
+	bottom: 0;
+}
+.Score{
+	position: absolute;
+	top: 15px;
+	left: 50px;
+	text-align: center;
+	padding-top: 23px;
+	font-family: GothamM;
+	font-size: 30px;
+	line-height: 20px;
+	background-color: rgba(102, 153, 204, 0.75);
+	color: white;
+	width: 300px;
+	height: 100px;
+	box-shadow: 0 0 20px 0px rgba(0,0,0,0.1);
+}
+.StartScreen{
+	background-color: rgba(102, 153, 204, 0.75);
+	color: white;
+	margin: auto;
+	margin-top: 25vh;
+	text-align: center;
+	box-shadow: 0 0 20px 0px rgba(0,0,0,0.1);
+	font-size: 25px;
+	font-family: GothamR;
+	width: 50%;
+	cursor: pointer;
+	border-radius: 23px;
+}
+button{
+	margin-bottom: 10px;
+	padding: 10px;
+	text-align: center;
+	text-transform: uppercase;
+	text-decoration: none;
+	font-family: GothamM;
+	color: #ffe852;
+	background-color: rgba(102, 153, 204, 0.6);
+	font-size: 15px;
+	letter-spacing: 2px;
+	text-shadow: 0px 0px 5px black;
+	border: 3px solid white;
+	border-radius: 10px;
+	transition: 0.2s;
+}
+
+@media (max-width: 1450px){
+	header{
+		width: 90vw;
+	}
+	.logo{
+		transform: scale(0.9);
+	}
+	.menu_btn{
+		transform: scale(0.9);
+		margin: 0;
+		align-self: center;
+		margin-right: 20px;
+		margin-top: 20px;
+	}
+	.nav_menu{
+		margin: 100px 25px;
+	}
+	.menu_link{
+		margin: 10px 15px;
+	}
+	.poloska1{
+		bottom: 25vh;
+	}
+}
+@media (max-width: 1120px) {
+	.Score{
+		left: 30px;
+		font-size: 22px;
+		width: 250px;
+		height: 90px;
+		padding-top: 15px;
+	}
+	.arrow_up, .arrow_down, .arrow_left, .arrow_right{
+		display: block;
+	}
+}
+@media (max-width: 900px) {
+	header{
+		height: 15vh;
+		justify-content: center;
+		align-content: center;
+	}
+	.logo img{
+		width: 200px;
+	}
+	.logo{
+		margin: 10px 0;
+	}
+	.menu_btn{
+		transform: scale(0.8);
+		margin: 0;
+		align-self: center;
+		margin-right: 20px;
+		margin-top: 22px;
+	}
+	.nav_menu{
+		margin: 100px 25px;
+	}
+	.menu_link{
+		font-size: 18px;
+		margin: 9px 15px;
+	}
+	.menu_link_btn, .link_planet{
+		font-size: 18px;
+	}
+	.poloska1{
+		right: 13vw;
+	}
+	.Score{
+		left: 5px;
+		font-size: 16px;
+		width: 175px;
+		height: 75px;
+		padding-top: 5px;
+		background: none;
+		text-align: left;
+	}
+	.StartScreen{
+		width: 80%;
+		font-size: 25px;
+	}
+}
+
+@media (max-width: 600px) {
+	header{
+		justify-content: center;
+		align-content: center;
+	}
+	.logo img{
+		width: 170px;
+	}
+	.logo{
+		margin: 10px 0;
+	}
+	.menu_btn{
+		transform: scale(0.7);
+		margin: 0;
+		align-self: center;
+		margin-right: 20px;
+		margin-top: 16px;
+	}
+	.nav_menu{
+		margin: 90px 25px;
+	}
+	.menu_link{
+		font-size: 16px;
+		margin: 4px 15px;
+	}
+	.menu_link_btn, .link_planet{
+		font-size: 16px;
+	}
+	.poloska1{
+		right: 20vw;
+	}
+	.GameArea{
+		transform: scale(0.65);
+		margin-top: -20vh;
+		height: 130vh;
+	}
+}
+
+@media (max-width: 560px) {
+	.Score{
+		left: 2px;
+		font-size: 12px;
+		padding-top: 0px;
+	}
+	.StartScreen{
+		width: 90%;
+		font-size: 20px;
+	}
+	button{
+		font-size: 12px;
+		padding: 7px;
+	}
+}
+@media(max-width: 400px){
+	.GameArea{
+		transform: scale(0.55);
+		width: auto;
+		height: 160vh;
+		margin-top: -32vh;
+	}
+	.lines{
+		margin-left: 175px;
+	}
+}
+@media(max-width: 320px){
+	.lines{
+		margin-left: 155px;
+	}
+}

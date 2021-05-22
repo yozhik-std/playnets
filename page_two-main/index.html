@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+	<title>Choosing a planet</title>
+</head>
+<body>
+	<div class='preloader'>
+		<div id='galaxy'>
+		  <div class='circle'></div>
+		  <div class='circle2'></div>
+		  <div class='circle3'></div>
+		  <div id='orbit0'>
+			<div id='pos0'>
+			  <div id='dot0'></div>
+			</div>
+		  </div>
+		  <div id='orbit1'>
+			<div id='pos1'>
+			  <div id='dot1'></div>
+			</div>
+		  </div>
+		  <div id='orbit2'>
+			<div id='pos2'>
+			  <div id='dot2'></div>
+			</div>
+		  </div>
+		  <div id='orbit3'>
+			<div id='pos3'>
+			  <div id='dot3'></div>
+			</div>
+		  </div>
+		</div>
+	  </div>
+	<nav class="menu slide_menu">
+		<ul class="nav_menu">
+			<li><a class="menu_link" href="../index.html">Главная</a></li>
+			<span class="menu_link_"><img class="arrow" src="../images/arroww.png"><a class="menu_link_btn" href="#">Планеты</a></span>
+				<div class="planet_list">
+					<a class="link_planet" id="link_mercury" href="../mercury-main/index.html">Меркурий</a>
+					<a class="link_planet" id="link_venus" href="../venus_-main/index.html">Венера</a>
+					<a class="link_planet" id="link_earth" href="../earth-main/index.html">Земля</a>
+					<a class="link_planet" id="link_mars" href="../mars_-main/index.html">Марс</a>
+					<a class="link_planet" id="link_jupiter" href="../jupiter-main/index.html">Юпитер</a>
+					<a class="link_planet" id="link_saturn" href="../saturn-main/index.html">Сатурн</a>
+					<a class="link_planet" id="link_uranus" href="../uranus-main/index.html">Уран</a>
+					<a class="link_planet" id="link_neptun" href="../neptun_2-main/index.html">Нептун</a>
+				</div>
+			<li><a class="menu_link" href="#">Мой тур</a></li>
+			<li><a class="menu_link" href="#">Горящий тур</a></li>
+			<li><a class="menu_link" href="#">Игры</a></li>
+			<li><a class="menu_link" id="link_moya_planeta" href="#">Моя планета</a></li>
+			<li><a class="menu_link" href="#">Контакты</a></li>
+		</ul>
+	</nav>
+	<span class="poloska1"></span>
+	<span class="poloska2"></span>
+	<span class="poloska3"></span>
+
+<div class="head_nav">
+<div class="icons_planets">
+	<div class="planet_menu"><img class="planet_icon" src="images/merkuriy.png"></div>
+	<div class="planet_menu"><img class="planet_icon" src="images/venera.png"></div>
+	<div class="planet_menu"><img class="planet_icon" src="images/zemlya.png"></div>
+	<div class="planet_menu"><img class="planet_icon" src="images/mars.png"></div>
+	<div class="planet_menu"><img class="planet_icon" src="images/юпитер.png"></div>
+	<div class="planet_menu"><img class="planet_icon" src="images/saturn.png"></div>
+	<div class="planet_menu"><img class="planet_icon" src="images/uran.png"></div>
+	<div class="planet_menu"><img class="planet_icon" src="images/neptun.png"></div>
+	<div class="planet_menu"><img class="planet_icon" src="images/moya_planeta.png"></div>
+</div>
+<div class="adapt_head">
+<header>
+	<div class="header_inner">
+		<a class="logo" href="../index.html"><img src="images/logo.png"></a>
+	<a class="menu_btn"><span></span></a>
+	</div>
+	</header>
+<div class="solar_system">
+	<div class="solar_shadow">
+		<div class="shadow-myplanet">
+		</div>
+	</div>
+	<div class="solar" id="solar_myplanet">
+		<div class="cycle-planet-myplanet" id="planet">
+		</div> 
+		<div class="description" id="descrip_myplanet">
+			<h3>МОЯ ПЛАНЕТА</h3>
+			<p>Не понравился ни один из предложенных туров? Выход есть всегда! Создайте вашу собственную планету!</p>
+			<a class="podrobnee" href="#">Пройти тест</a>
+		 </div>
+	</div> 
+	<div class="solar_shadow">
+		<div class="shadow-neptun">
+		</div>
+	</div>
+	<div class="solar" id="solar_neptun">
+		<div class="cycle-planet-neptune" id="planet">
+		</div>
+		<div class="description" id="descrip_neptun">
+			<h3>НЕПТУН</h3>
+			<p>Ни для кого ни секрет, что нептун - бог морей. Наш тур предлагает вам посетить самй необычный космический аквапарк во всей галактике! Будьте аккуратны, ветер тут достигает 2100 км/ч!</p>
+			<a class="podrobnee" href="../neptun_2-main/index.html">Подробнее</a>
+		 </div>
+	</div>
+	<div class="solar_shadow">
+		<div class="shadow-uran">
+		</div>
+	</div>
+	<div class="solar" id="solar_uran">
+		<div class="cycle-planet-uran" id="planet">
+		</div>
+		<div class="description" id="descrip_uran">
+			<h3>УРАН</h3>
+			<p>Вам вечно жарко и душно? Тогда наш "охлаждающий" тур для вас. Он не просто так имеет такое название: температура урана -224℃! Кажется,лучше запастись обогревателем</p>
+			<a class="podrobnee" href="../uranus-main/index.html">Подробнее</a>
+		 </div>
+	</div>
+	<div class="solar_shadow">
+		<div class="shadow-saturn">
+		</div>
+	</div>
+	<div class="solar" id="solar_saturn">
+		<div class="cycle-planet-saturn" id="planet">
+		</div>
+		<div class="description" id="descrip_saturn">
+			<h3>САТУРН</h3>
+			<p>Парк аттракционов? Батуты? А может американские горки по кольцам сатурна? Но держитесь крепче, не упадите - плотность сатурна в 2 раза меньше плотности воды</p>
+			<a class="podrobnee" href="../saturn-main/index.html">Подробнее</a>
+		 </div>
+	</div>
+	<div class="solar_shadow">
+		<div class="shadow-jupiter">
+		</div>
+	</div>
+	<div class="solar"  id="solar_jupiter">
+		<div class="cycle-planet-jupiter" id="planet">
+		</div>
+		<div class="description" id="descrip_jupiter">
+			<h3>ЮПИТЕР</h3>
+			<p>Места хватит всем! Однако не забывайте, что по этой планете длится недолго и не теряйте бдительности, ведь на юпитере день длится всего 12 земных часов, а вот год - 12 земных лет.</p>
+			<a class="podrobnee" href="../jupiter-main/index.html">Подробнее</a>
+		 </div>
+	</div>
+	<div class="solar_shadow">
+		<div class="shadow-mars">
+		</div>
+	</div>
+	<div class="solar" id="solar_mars">
+		<div class="cycle-planet-mars" id="planet">
+		</div>
+		<div class="description" id="descrip_mars">
+			<h3>МАРС</h3>
+			<p>Если вы заинтересованы жизнью на Марсе - этот тур для Вас! Поставим все точки над "И" и ответим на самый актуальный вопрос: действительно ли жизнь на марсе реальна?</p>
+			<a class="podrobnee" href="../mars_-main/index.html">Подробнее</a>
+		 </div>
+	</div>
+	<div class="solar_shadow">
+		<div class="shadow-earth">
+		</div>
+	</div>
+	<div class="solar" id="solar_earth">
+		<div class="cycle-planet-earth" id="planet">
+		</div>
+		<div class="description" id="descrip_earth">
+			<h3>ЗЕМЛЯ</h3>
+			<p>Думаете, что знаете Землю вдоль и поперек, но наш тур убедит вас в обратном! Мы покажем вам неизведанные уголки этой планеты, ведь новое - это хорошо забытое старое!</p>
+			<a class="podrobnee" href="../earth-main/index.html">Подробнее</a>
+		 </div>
+	</div>
+	<div class="solar_shadow">
+		<div class="shadow-venus">
+		</div>
+	</div>
+	<div class="solar" id="solar_venus">
+		<div class="cycle-planet-venus" id="planet">
+		</div>
+		<div class="description" id="descrip_venus">
+			<h3>ВЕНЕРА</h3>
+			<p>Одиноко и не хватает тепла? Тогда вы по адресу! Наш тур по Венере не только согреет, но и предоставит вам компаньона. Ведь температура на этой планете 467℃</p>
+			<a class="podrobnee" href="../venus_-main/index.html">Подробнее</a>
+		 </div>
+	</div>
+	<div class="solar_shadow">
+		<div class="shadow-mercury">
+		</div>
+	</div>
+	<div class="solar" id="solar_mercury">
+	<div class="cycle-planet-mercury" id="planet">
+	</div>
+	<div class="description" id="descrip_mercury">
+		<h3>МЕРКУРИЙ</h3>
+		<p>Давно не расслаблялись? Не беда! Наш тур поможет поможет вам ощутить всю прелесть отдыха. Горячие источники и гейзеры меркурия подарят незабываемые впечатления</p>
+		<a class="podrobnee" href="../mercury-main/index.html">Подробнее</a>
+	 </div>
+	</div>
+</div>
+</div>
+</div>
+<div class="shadows">
+	<div class="shadow"></div>
+	<div class="shadow"></div>
+	<div class="shadow"></div>
+	<div class="shadow"></div>
+	<div class="shadow"></div>
+	<div class="shadow"></div>
+	<div class="shadow"></div>
+	<div class="shadow"></div>
+	<div class="shadow"></div>
+</div>
+<div class="buttons_planets">
+	<div class="radio">
+		<input class="custom-radio" name="radio_btns" type="radio" id="moya_planeta_btn">
+		<label for="moya_planeta_btn"><div class="texxxt">МОЯ ПЛАНЕТА</div></label>
+	 </div>
+	 <div class="radio">
+		<input class="custom-radio" name="radio_btns" type="radio" id="neptun_btn">
+		<label for="neptun_btn"><div class="texxxt">НЕПТУН</div></label>
+	 </div>
+	 <div class="radio">
+		<input class="custom-radio" name="radio_btns" type="radio" id="uran_btn">
+		<label for="uran_btn"><div class="texxxt">УРАН</div></label>
+	 </div>
+	 <div class="radio">
+		<input class="custom-radio" name="radio_btns" type="radio" id="saturn_btn">
+		<label for="saturn_btn"><div class="texxxt">САТУРН</div></label>
+	 </div>
+	 <div class="radio">
+		<input class="custom-radio" name="radio_btns" type="radio" id="jupiter_btn">
+		<label for="jupiter_btn"><div class="texxxt">ЮПИТЕР</div></label>
+	 </div>
+	 <div class="radio">
+		<input class="custom-radio" name="radio_btns" type="radio" id="mars_btn">
+		<label for="mars_btn"><div class="texxxt">МАРС</div></label>
+	 </div>
+	 <div class="radio">
+		<input class="custom-radio" name="radio_btns" type="radio" id="zemlya_btn">
+		<label for="zemlya_btn"><div class="texxxt">ЗЕМЛЯ</div></label>
+	 </div>
+	 <div class="radio">
+		<input class="custom-radio" name="radio_btns" type="radio" id="venera_btn">
+		<label for="venera_btn"><div class="texxxt">ВЕНЕРА</div></label>
+	 </div>
+	 <div class="radio">
+		<input class="custom-radio" name="radio_btns" type="radio" id="mercury_btn" checked>
+		<label for="mercury_btn"><div class="texxxt">МЕРКУРИЙ</div></label>
+	 </div>
+</div>
+<script>
+	window.onload = function () {
+	  document.body.classList.add('loaded_hiding');
+	  window.setTimeout(function () {
+		document.body.classList.add('loaded');
+		document.body.classList.remove('loaded_hiding');
+	  }, 500);
+	}
+  </script>
+<script src="app.js"></script>
+</body>
+</html>

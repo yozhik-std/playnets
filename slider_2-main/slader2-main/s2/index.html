@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Planet2</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+<link rel="stylesheet" href="assets/css/style.css" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+<meta charset="UTF-8">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="content">
+            <div class="hi">
+                <div class="container">
+                    <nav class="menu slide_menu">
+                    <ul class="nav_menu">
+                        <li><a class="menu_link" href="#">Главная</a></li>
+                        <span class="menu_link_"><img class="arrow" src="./assets/css/arroww.png"><a class="menu_link_btn" href="#">Планеты</a></span>
+                            <div class="planet_list">
+                                <a class="link_planet" href="#">Меркурий</a>
+                                <a class="link_planet" href="#">Венера</a>
+                                <a class="link_planet" href="#">Земля</a>
+                                <a class="link_planet" href="#">Марс</a>
+                                <a class="link_planet" href="#">Юпитер</a>
+                                <a class="link_planet" href="#">Сатурн</a>
+                                <a class="link_planet" href="#">Уран</a>
+                                <a class="link_planet" href="#">Нептун</a>
+                            </div>
+                        <li><a class="menu_link" href="#">Мой тур</a></li>
+                        <li><a class="menu_link" href="#">Горящий тур</a></li>
+                        <li><a class="menu_link" href="#">Игры</a></li>
+                        <li><a class="menu_link" href="#">Моя планета</a></li>
+                        <li><a class="menu_link" href="#">Контакты</a></li>
+                    </ul>
+                 </nav>
+                 <span class="poloska1"></span>
+                 <span class="poloska2"></span>
+                 <span class="poloska3"></span>
+                 <header>
+                    <div class="header_inner">
+                        <a class="logo" href="#"><img src="./assets/css/logo.png"></a>
+                        <a href="#" class="menu_btn"><span></span></a>
+                    </div>
+                 </header>
+                 <script src="assets/js/app.js"></script>
+                    <div class="hi_row">
+                        <div class="hi_text">
+                            <div class="hi_text_1">ТЕСТ</div>
+                            <div class="hi_text_2">Какой тур Вам следует выбрать</div>
+                            <div class="hi_text_3">Меркурий, Венера, Земля, Марс, Юпитер, Сатурн, Уран, Нептун или Плутон?</div>
+                        </div>
+                        <form name="myform" class="form">
+                        <!-- Slideshow container -->
+<div class="slideshow-container">
+
+    <!-- Full-width images with number and caption text -->
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 11</div>
+      <div class="text">
+        <div class="box_row">
+          
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          
+        <div class="question">
+            Вопрос 1. Сколько времени Вы готовы потратить на полет до планеты?
+      <div class="answer_row">
+        <div class="answer_input"> <input type="radio" name="q1" value="1" id="l1"><label for="l1">20 минут и не более</label><br></div>
+        <div class="answer_input"><input type="radio" name="q1" value="2" id="l2"><label for="l2">Готов провести в полете хоть всю жизнь</label><br></div>
+        <div class="answer_input"><input type="radio" name="q1" value="3" id="l3"><label for="l3">Время полета не имеет значения</label><br></div>
+      </div>
+    </div>
+    
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  
+    </div>  
+        </div>
+
+    </div>
+    <div class="mySlides fade">
+        <div class="numbertext">2 / 11</div>
+        <div class="text">
+          <div class="box_row">
+          
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <div class="question">
+              Вопрос 2.	Какую планету Вы хотите посетить?
+        <div class="answer_row">
+          <div class="answer_input"> <input type="radio" name="21" value="1" id="l4"><label for="l4">Планету-гигант</label><br></div>
+          <div class="answer_input"><input type="radio" name="q2" value="2" id="l5"><label for="l5">Крошечную планету, чтобы исследовать все её уголки</label><br></div>
+          <div class="answer_input"><input type="radio" name="q2" value="3" id="l6"><label for="l6">Альтернативу нашей Земле</label><br></div>
+        </div>
+      </div>  
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          </div>
+          </div>
+  
+      </div>
+
+    <div class="mySlides fade">
+        <div class="numbertext">3 / 11</div>
+        <div class="text">
+          <div class="box_row">
+          
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <div class="question">
+              Вопрос 3.	Какой климат Вы предпочитаете?
+        <div class="answer_row">
+          <div class="answer_input"> <input type="radio" name="q3" value="1" id="l7"><label for="l7">Знойное лето</label><br></div>
+          <div class="answer_input"><input type="radio" name="q3" value="2" id="l8"><label for="l8">Умеренный</label><br></div>
+          <div class="answer_input"><input type="radio" name="q3" value="3" id="l9"><label for="l9">Морозную зиму</label><br></div>
+        </div>
+      </div>  
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          </div>
+          </div>
+  
+      </div>
+      <div class="mySlides fade">
+        <div class="numbertext">4 / 11</div>
+        <div class="text">
+          <div class="box_row">
+          
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <div class="question">
+              Вопрос 4.	Что больше всего Вы хотите от данного тура?
+        <div class="answer_row">
+          <div class="answer_input"> <input type="radio" name="q4" value="1" id="l10"><label for="l10">Увидеть необычные ландшафты</label><br></div>
+          <div class="answer_input"><input type="radio" name="q4" value="2" id="l11"><label for="l11">Встретить инопланетных существ</label><br></div>
+          <div class="answer_input"><input type="radio" name="q4" value="3" id="l12"><label for="l12">Сделать потрясающие фотографии</label><br></div>
+        </div>
+      </div>  
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          </div>
+          </div>
+  
+      </div>
+      <div class="mySlides fade">
+        <div class="numbertext">5 / 11</div>
+        <div class="text">
+          <div class="box_row">
+          
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <div class="question">
+              Вопрос 5.	Какая характеристика планеты Вам кажется наиболее интересной?
+        <div class="answer_row">
+          <div class="answer_input"> <input type="radio" name="q5" value="1" id="l13"><label for="l13">Леденящий голубой гигант</label><br></div>
+          <div class="answer_input"><input type="radio" name="q5" value="2" id="l14"><label for="l14">Яркий огненный шар</label><br></div>
+          <div class="answer_input"><input type="radio" name="q5" value="3" id="l15"><label for="l15">Живая красная планета</label><br></div>
+        </div>
+      </div> 
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          </div> 
+          </div>
+  
+      </div>
+      <div class="mySlides fade">
+        <div class="numbertext">6 / 11</div>
+        <div class="text">
+          <div class="box_row">
+          
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <div class="question">
+              Вопрос 6.	На сколько Вы готовы остаться на чужой планете, если узнаете, что время там идет по-другому?
+        <div class="answer_row">
+          <div class="answer_input"> <input type="radio" name="q6" value="1" id="l16"><label for="l16">Хоть всю жизнь</label><br></div>
+          <div class="answer_input"><input type="radio" name="q6" value="2" id="l17"><label for="l17">Согласен пробыть там 1 год, пока на Земле пройдет 10 лет</label><br></div>
+          <div class="answer_input"><input type="radio" name="q6" value="3" id="l18"><label for="l18">Хочу, чтобы время шло почти одинаково с земным</label><br></div>
+        </div>
+      </div>  
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          </div>
+          </div>
+  
+      </div>
+      <div class="mySlides fade">
+        <div class="numbertext">7 / 11</div>
+        <div class="text">
+          <div class="box_row">
+          
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <div class="question">
+              Вопрос 7.	Хотите ли Вы посетить альтернативу нашей родной планете?
+        <div class="answer_row">
+          <div class="answer_input"> <input type="radio" name="q7" value="1" id="l19"><label for="l19">Да, хочу узнать, где можно остаться надолго</label><br></div>
+          <div class="answer_input"><input type="radio" name="q7" value="2" id="l20"><label for="l20"> Хочу посетить самую необычную и полностью отличающуюся от Земли планету</label><br></div>
+          <div class="answer_input"><input type="radio" name="q7" value="3" id="l21"><label for="l21">Хочу просто интересно провести время</label><br></div>
+        </div>
+      </div> 
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          </div> 
+          </div>
+  
+      </div>
+      <div class="mySlides fade">
+        <div class="numbertext">8 / 11</div>
+        <div class="text">
+          <div class="box_row">
+          
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <div class="question">
+              Вопрос 8.	Планета, которую Вы хотите посетить должна быть?
+        <div class="answer_row">
+          <div class="answer_input"> <input type="radio" name="q8" value="1" id="l22"><label for="l22">Самой узнаваемой и красивой</label><br></div>
+          <div class="answer_input"><input type="radio" name="q8" value="2" id="l23"><label for="l23">Самой огромной</label><br></div>
+          <div class="answer_input"><input type="radio" name="q8" value="3" id="l24"><label for="l24">Самой горячей</label><br></div>
+        </div>
+      </div> 
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          </div> 
+          </div>
+  
+      </div>
+      <div class="mySlides fade">
+        <div class="numbertext">9 / 11</div>
+        <div class="text">
+          <div class="box_row">
+          
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <div class="question">
+              Вопрос 9.	Важен ли для Вас возраст планеты?
+        <div class="answer_row">
+          <div class="answer_input"> <input type="radio" name="q9" value="1" id="l25"><label for="l25">Да, хочу посетить самую молодую планету</label><br></div>
+          <div class="answer_input"><input type="radio" name="q9" value="2" id="l26"><label for="l26">Нет, хочу, чтобы планета была самой изученной</label><br></div>
+          <div class="answer_input"><input type="radio" name="q9" value="3" id="l27"><label for="l27">Не важно</label><br></div>
+        </div>
+      </div> 
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          </div> 
+          </div>
+  
+      </div>
+      <div class="mySlides fade">
+        <div class="numbertext">10 / 11</div>
+        <div class="text">
+          <div class="box_row">
+          
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <div class="question">
+              Вопрос 10. Планета какого цвета вызывает у вас наибольший интерес?
+        <div class="answer_row">
+          <div class="answer_input"> <input type="radio" name="q10" value="1" id="l28"><label for="l28">Голубой/синий</label><br></div>
+          <div class="answer_input"><input type="radio" name="q10" value="2" id="l29"><label for="l29">Красный/оранжевый</label><br></div>
+          <div class="answer_input"><input type="radio" name="q10" value="3" id="l30"><label for="l30">Белый/бледно-желтый</label><br></div>
+        </div>
+      </div>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div> 
+          </div>
+  
+      </div>
+      <div class="mySlides fade">
+        <div class="numbertext">11 / 11</div>
+          
+          <a class="prev1" onclick="plusSlides(-1)">&#10094;</a>
+      
+          <div class="question1">
+
+            <a href="#" id="title" class="hi_submit" onclick="check()"><p>ПОКАЗАТЬ</p> <p>РЕЗУЛЬТАТ</p></a>
+            
+        </div>
+        <a class="next1" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+        
+      
+          
+  
+      </div>
+</form>
+
+<script> 
+
+  function check() {
+    var count=0;
+    var q1=document.myform.q1.value;
+    var q2=document.myform.q2.value;
+    var q3=document.myform.q3.value;
+    var q4=document.myform.q4.value;
+    var q5=document.myform.q5.value;
+    var q6=document.myform.q6.value;
+    var q7=document.myform.q7.value;
+    var q8=document.myform.q8.value;
+    var q9=document.myform.q9.value;
+    var q10=document.myform.q10.value;
+
+    if (q1 == "2") count++;
+    if (q2 == "1") count++;
+    if (q3 == "1") count++;
+    if (q4 == "3") count++;
+    if (q5 == "2") count++;
+    if (q6 == "1") count++;
+    if (q7 == "1") count++;
+    if (q8 == "3") count++;
+    if (q9 == "2") count++;
+    if (q10 == "3") count++;
+
+    if (count >= 7) {
+      document.location.href = " https://ekaterinadr.github.io/mars/";
+    } else if (count >= 3) {
+      document.location.href = "https://ekaterinadr.github.io/venera/";
+    } else {
+      document.location.href = "https://ekaterinadr.github.io/saturn/";
+    };
+
+  } 
+
+</script>
+      
+  
+    
+  
+  
+  </div>
+  <br>
+  
+  <!-- The dots/circles -->
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+    <span class="dot" onclick="currentSlide(4)"></span>
+    <span class="dot" onclick="currentSlide(5)"></span>
+    <span class="dot" onclick="currentSlide(6)"></span>
+    <span class="dot" onclick="currentSlide(7)"></span>
+    <span class="dot" onclick="currentSlide(8)"></span>
+    <span class="dot" onclick="currentSlide(9)"></span>
+    <span class="dot" onclick="currentSlide(10)"></span>
+    <span class="dot" onclick="currentSlide(11)"></span>
+  </div>
+  <script src="./assets/js/sl.js"></script>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

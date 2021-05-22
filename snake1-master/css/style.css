@@ -1,0 +1,472 @@
+body {
+	margin: 0;
+	line-height: 1.6;
+	overflow: hidden;
+	position: fixed;
+   top: 0;
+   left: 0;
+   bottom: 0;
+   right: 0;
+   background: url('bg.jpg') no-repeat;
+   background-size: auto;
+   background-size: 100vw 100vh;
+}
+
+@font-face {
+	font-family: GothamM;
+	src: url('ofont.ru_Gotham\ Pro.ttf');
+}
+@font-face {
+	font-family: GothamR;
+	src: url('14078.ttf');
+}
+  
+.menu {
+	background-color: #1D1F20;
+	position: absolute;
+	z-index: 20;
+	top: 0;
+	bottom: 0;
+	right: 0;
+}
+.slide_menu {
+	width: 325px;
+	min-height: 100vh;
+	transition: 0.4s;
+	opacity: 0;
+	transform-origin: right;
+	transform: scaleX(0);
+}
+.nav_menu {
+	max-width: 260px;
+	padding: 0;
+	margin: 130px 25px;
+   list-style: none;
+}
+li {
+	display: list-item;
+   text-align: -webkit-match-parent;
+}
+.menu_link_btn, .menu_link{
+	font-size: 20px;
+	font-family: GothamM;
+	color: white;
+	text-decoration: none;
+	letter-spacing: 2px;
+	transition: 0.1s;
+}
+.menu_link {
+	margin: 15px 19.5px;
+	display: block;
+}
+.menu_link_btn{
+	transition: 0.1s;
+}
+.menu_link:hover, .menu_link_btn:hover{
+	color: #ecdf89;
+	text-shadow: 0 0 2px #fdee8e;
+	padding: 15px;
+}
+	
+.link_planet{
+	font-size: 20px;
+	font-family: GothamM;
+	color: white;
+	text-decoration: none;
+	letter-spacing: 2px;
+	margin: 0 35px;
+	display: block;
+}
+.link_planet:hover{
+	color: #ecdf89;
+	text-shadow: 0 0 2px #fdee8e;
+	padding: 7px;
+}
+.planet_list{
+	transform: scaleY(0);
+	transition: 0.2s;
+	position: absolute;
+	transform-origin: top;
+}
+.planet_list_active{
+	transform: scaleY(1);
+	position: static;
+}
+.arrow{
+	height: 16px;
+	margin-right: 8px;
+	margin-bottom: -1px;
+	transition: 0.2s;
+}
+.arrow_active{
+	transform: rotate(90deg);
+}
+
+.slide_menu_active {
+	transform: scaleX(1);
+	opacity: 1;
+}
+.poloska1, .poloska2, .poloska3{
+	position: absolute;
+	background-color: white;
+	transform: rotate(-26deg) scaleX(0);
+	z-index: 20;
+	transition: 0.2s;
+	transform-origin: right;
+}
+.poloska1{
+	width: 350px;
+	height: 3px;
+	bottom: 21.5vh;
+	right: 8vw;
+}
+.poloska2{
+	width: 430px;
+	height: 7px;
+	bottom: 35vh;
+	right: -3vw;
+}
+.poloska3{
+	width: 230px;
+	height: 5px;
+	bottom: 29.5vh;
+	right: -3vw;
+}
+.poloska_active{
+	transform: rotate(-26deg) scaleX(1);
+	transition: 0.2s;
+	transform-origin: right;
+}
+.poloska_act{
+	transform: rotate(-26deg) scaleX(0);
+}
+
+header {
+	width: 85vw;
+	margin: 0 auto;
+	height: 12vh;
+}
+.header_inner {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	margin: 0 auto;
+}
+.logo{
+	margin: 20px;
+}
+.menu_btn {
+	margin-top: 70px;
+	margin-right: 20px;
+	width: 56px;
+	height: 36px;
+	display: block;
+	position: relative;
+	z-index: 20;
+}
+.menu_btn span,
+.menu_btn span::before,
+.menu_btn span::after{
+	position: absolute;
+	top: 50%; margin-top: -2px;
+	width: 56px;
+	height: 4px;
+	background-color: white;
+}
+.menu_btn span::before,
+.menu_btn span::after{
+	content: '';
+	display: block;
+	transition: 0.4s;
+}
+.menu_btn span::before{
+	transform: translateY(12px);
+}
+.menu_btn span::after{
+	transform: translateY(-12px);
+}
+.menu_btn_active span{
+	height: 0;
+}
+.menu_btn_active span:before{
+	transform: rotate(45deg);
+	height: 3px;
+	width: 50px;
+}
+.menu_btn_active span:after{
+	transform: rotate(-45deg);
+	height: 3px;
+	width: 50px;
+}
+.menu_btn_active {
+	transform: translate(100px);
+}
+@media (max-width: 1450px){
+	header{
+		width: 90vw;
+		height: 7vh;
+	}
+	.logo{
+		transform: scale(0.9);
+	}
+	.menu_btn{
+		transform: scale(0.9);
+		margin: 0;
+		align-self: center;
+		margin-right: 20px;
+		margin-top: 20px;
+	}
+	.nav_menu{
+		margin: 100px 25px;
+	}
+	.menu_link{
+		margin: 10px 15px;
+	}
+	.poloska1{
+		bottom: 25vh;
+	}
+}
+
+@media (max-width: 900px) {
+	header{
+		height: 7vh;
+		justify-content: center;
+		align-content: center;
+	}
+	.logo img{
+		width: 200px;
+	}
+	.logo{
+		margin: 10px 0;
+	}
+	.menu_btn{
+		transform: scale(0.8);
+		margin: 0;
+		align-self: center;
+		margin-right: 20px;
+		margin-top: 22px;
+	}
+	.nav_menu{
+		margin: 100px 25px;
+	}
+	.menu_link{
+		font-size: 18px;
+		margin: 9px 15px;
+	}
+	.menu_link_btn, .link_planet{
+		font-size: 18px;
+	}
+	.poloska1{
+		right: 13vw;
+	}
+}
+
+@media (max-width: 600px) {
+	header{
+		justify-content: center;
+		align-content: center;
+	}
+	.logo img{
+		width: 170px;
+	}
+	.logo{
+		margin: 10px 0;
+	}
+	.menu_btn{
+		transform: scale(0.7);
+		margin: 0;
+		align-self: center;
+		margin-right: 20px;
+		margin-top: 16px;
+	}
+	.nav_menu{
+		margin: 90px 25px;
+	}
+	.menu_link{
+		font-size: 16px;
+		margin: 4px 15px;
+	}
+	.menu_link_btn, .link_planet{
+		font-size: 16px;
+	}
+	.poloska1{
+		right: 20vw;
+	}
+}
+
+/*-----------------------------------------------------------------*/
+
+
+.name {    width: 20%;
+    font-size: 40px;
+    font-family: GothamM;
+    color: white;
+    text-align: center;
+    margin: 0 auto;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+}
+
+
+.name::after {
+    content: '';
+    display: block;
+	margin:auto;
+    background: white;
+    width:  75%;
+    height: 2px;
+    box-shadow: 0 0 10px white;
+}
+
+
+.container {
+  width: 620px;
+  height: 900px ;
+  margin: 0 auto;
+
+   z-index: 5;
+   
+}
+
+canvas {
+	position: relative;
+	margin-top: 6%;
+   display: block;
+   z-index: 10;
+}
+
+.button {
+	width: 32%;
+font-size: 25px;
+font-family: GothamR;
+color: white;
+margin-top: 2%;
+margin-left: auto;
+margin-right: auto;
+border: 2px white solid;
+border-radius: 15px;
+text-align: center;
+letter-spacing: 2px;
+cursor:pointer;
+}
+
+.button:hover {
+	transform: scale(1.1);
+		color: #785d9f;
+		text-shadow: 0 0 2px #503353;
+		
+}
+
+.kometa img {
+    position: absolute;
+    z-index: 8;
+    width: 29vh;
+    height: 25vh;
+    bottom: 3%;
+    right: 12%;
+
+
+}
+
+.zvezda1 img {
+	position: absolute;
+    z-index: 2;
+    width: 21vh;
+    height: 25vh;
+    bottom: 50%;
+    right: 25%;
+
+
+}
+
+.zvezda2 img {
+
+	position: absolute;
+    z-index: 2;
+    width: 21vh;
+    height: 25vh;
+    bottom: 3%;
+    right: 65%;
+}
+
+@media (max-width: 1600px) {
+	
+	canvas{
+	transform: scale(0.7);
+	margin-top: -12%;
+}
+
+	.button{
+		margin-top: -8%;
+	}
+}
+
+
+
+@media (max-width: 1450px) {
+
+	.kometa img {
+		position: absolute;
+		z-index: 8;
+		width: 29vh;
+		height: 25vh;
+		bottom: 3%;
+		right: 1%;
+	
+	
+	}
+	
+	.zvezda1 img {
+		position: absolute;
+		z-index: 2;
+		width: 21vh;
+		height: 25vh;
+		bottom: 60%;
+		right: 15%;
+	
+	
+	}
+	
+	.zvezda2 img {
+	
+		position: absolute;
+		z-index: 2;
+		width: 21vh;
+		height: 25vh;
+		bottom: 3%;
+		right: 70%;
+	}
+
+	.name {
+		font-size: 25px;
+	}
+
+	canvas {
+		margin-top: 2%;
+	}
+
+
+	.button {
+		margin-top: 1%;
+	}
+}
+@media (max-width: 1200px) {
+	.kometa img {
+		display: none;
+	
+	
+	}
+	
+	.zvezda1 img {
+	display: none;
+	
+	}
+	
+	.zvezda2 img {
+	
+	display: none;
+	}
+
+}
+
+	
