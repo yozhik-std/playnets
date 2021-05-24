@@ -35,33 +35,46 @@ body {
 	transform-origin: right;
 	transform: scaleX(0);
 }
+
 .nav_menu {
 	max-width: 260px;
 	padding: 0;
 	margin: 130px 25px;
-   list-style: none;
+	list-style: none;
 }
+
 li {
 	display: list-item;
-   text-align: -webkit-match-parent;
+	text-align: -webkit-match-parent;
 }
-.menu_link_btn, .menu_link{
+
+.menu_link_btn,
+.menu_link {
 	font-size: 20px;
 	font-family: GothamM;
 	color: white;
 	text-decoration: none;
 	letter-spacing: 2px;
-}
-.menu_link {
-	margin: 15px;
-	display: block;
-}
-.menu_link:hover, .menu_link_btn:hover{
-	color: #ecdf89;
-	text-shadow: 0 0 2px #fdee8e;
+	transition: 0.1s;
 }
 
-.link_planet{
+.menu_link {
+	margin: 15px 19.5px;
+	display: block;
+}
+
+.menu_link_btn {
+	transition: 0.1s;
+}
+
+.menu_link:hover,
+.menu_link_btn:hover {
+	color: #ecdf89;
+	text-shadow: 0 0 2px #fdee8e;
+	padding: 15px;
+}
+
+.link_planet {
 	font-size: 20px;
 	font-family: GothamM;
 	color: white;
@@ -70,27 +83,33 @@ li {
 	margin: 0 35px;
 	display: block;
 }
-.link_planet:hover{
+
+.link_planet:hover {
 	color: #ecdf89;
 	text-shadow: 0 0 2px #fdee8e;
+	padding: 7px;
 }
-.planet_list{
+
+.planet_list {
 	transform: scaleY(0);
 	transition: 0.2s;
 	position: absolute;
 	transform-origin: top;
 }
-.planet_list_active{
+
+.planet_list_active {
 	transform: scaleY(1);
 	position: static;
 }
-.arrow{
+
+.arrow {
 	height: 16px;
-	margin-right: 4px;
+	margin-right: 8px;
 	margin-bottom: -1px;
 	transition: 0.2s;
 }
-.arrow_active{
+
+.arrow_active {
 	transform: rotate(90deg);
 }
 
@@ -98,7 +117,10 @@ li {
 	transform: scaleX(1);
 	opacity: 1;
 }
-.poloska1, .poloska2, .poloska3{
+
+.poloska1,
+.poloska2,
+.poloska3 {
 	position: absolute;
 	background-color: white;
 	transform: rotate(-26deg) scaleX(0);
@@ -106,13 +128,15 @@ li {
 	transition: 0.2s;
 	transform-origin: right;
 }
-.poloska1{
+
+.poloska1 {
 	width: 350px;
 	height: 3px;
 	bottom: 21.5vh;
 	right: 8vw;
 }
-.poloska2{
+
+.poloska2 {
 	position: absolute;
 	width: 430px;
 	height: 7px;
@@ -123,8 +147,9 @@ li {
 	z-index: 20;
 	transition: 0.2s;
 	transform-origin: right;
-	}
-	.poloska3{
+}
+
+.poloska3 {
 	position: absolute;
 	width: 230px;
 	height: 5px;
@@ -135,13 +160,15 @@ li {
 	z-index: 20;
 	transition: 0.2s;
 	transform-origin: right;
-	}
-.poloska_active{
+}
+
+.poloska_active {
 	transform: rotate(-26deg) scaleX(1);
 	transition: 0.2s;
 	transform-origin: right;
 }
-.poloska_act{
+
+.poloska_act {
 	transform: rotate(-26deg) scaleX(0);
 }
 
@@ -149,16 +176,20 @@ header {
 	width: 85vw;
 	margin: 0 auto;
 	height: 20vh;
+	margin-bottom: 70px;
 }
+
 .header_inner {
 	width: 100%;
 	display: flex;
 	justify-content: space-between;
 	margin: 0 auto;
 }
-.logo{
+
+.logo {
 	margin: 20px;
 }
+
 .menu_btn {
 	margin-top: 70px;
 	margin-right: 20px;
@@ -168,40 +199,49 @@ header {
 	position: relative;
 	z-index: 20;
 }
+
 .menu_btn span,
 .menu_btn span::before,
-.menu_btn span::after{
+.menu_btn span::after {
 	position: absolute;
-	top: 50%; margin-top: -2px;
+	top: 50%;
+	margin-top: -2px;
 	width: 56px;
 	height: 4px;
 	background-color: white;
 }
+
 .menu_btn span::before,
-.menu_btn span::after{
+.menu_btn span::after {
 	content: '';
 	display: block;
 	transition: 0.4s;
 }
-.menu_btn span::before{
+
+.menu_btn span::before {
 	transform: translateY(12px);
 }
-.menu_btn span::after{
+
+.menu_btn span::after {
 	transform: translateY(-12px);
 }
-.menu_btn_active span{
+
+.menu_btn_active span {
 	height: 0;
 }
-.menu_btn_active span:before{
+
+.menu_btn_active span:before {
 	transform: rotate(45deg);
 	height: 3px;
 	width: 50px;
 }
-.menu_btn_active span:after{
+
+.menu_btn_active span:after {
 	transform: rotate(-45deg);
 	height: 3px;
 	width: 50px;
 }
+
 .menu_btn_active {
 	transform: translate(100px);
 }
