@@ -1,0 +1,438 @@
+/*Fonts*/
+@font-face {
+	font-family: GothamM;
+	src: url('../css/fonts/ofont.ru_Gotham\ Pro.ttf');
+}
+@font-face {
+	font-family: GothamR;
+	src: url('../css/fonts/14078.ttf');
+}
+
+@font-face {
+   font-family: 'Tektur Regular';
+   font-style: normal;
+   font-weight: normal;
+   src: local('Tektur Regular'), url('Tektur-Regular.ttf') format('truetype');
+   }
+   
+/*Body*/
+
+   body {
+      margin: 0;
+      line-height: 1.6;
+      background: url("../css/images/bg.jpg");
+      overflow: hidden;
+      position: fixed;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+  }
+
+
+h1, h2, h3, h4, h5, h6 {
+        margin: 0;
+}
+
+
+
+
+/* Header */
+
+.menu {
+	background-color: #1D1F20;
+	position: absolute;
+	z-index: 20;
+	top: 0;
+	bottom: 0;
+	right: 0;
+}
+.slide_menu {
+	width: 325px;
+	min-height: 100vh;
+	transition: 0.4s;
+	opacity: 0;
+	transform-origin: right;
+	transform: scaleX(0);
+}
+.nav_menu {
+	max-width: 260px;
+	padding: 0;
+	margin: 130px 25px;
+   list-style: none;
+}
+li {
+	display: list-item;
+   text-align: match-parent;
+}
+.menu_link {
+	font-size: 30px;
+	font-family: GothamM;
+	color: white;
+	text-decoration: none;
+	letter-spacing: 2px;
+	margin: 15px;
+	display: block;
+}
+.menu_link:hover{
+	color: #ecdf89;
+	text-shadow: 0 0 2px #fdee8e;
+}
+.menu_link_btn{
+	font-size: 30px;
+	font-family: GothamM;
+	color: white;
+	text-decoration: none;
+	letter-spacing: 2px;
+}
+.menu_link_btn:hover{
+	color: #ecdf89;
+	text-shadow: 0 0 2px #fdee8e;
+}
+.link_planet{
+	font-size: 30px;
+	font-family: GothamM;
+   font-weight: 500;
+	color: white;
+	text-decoration: none;
+	letter-spacing: 2px;
+	margin: 0 35px;
+	display: block;
+}
+.link_planet:hover{
+	color: #ecdf89;
+	text-shadow: 0 0 2px #fdee8e;
+}
+.planet_list{
+	transform: scaleY(0);
+	transition: 0.2s;
+	position: absolute;
+	transform-origin: top;
+}
+.planet_list_active{
+	transform: scaleY(1);
+	position: static;
+}
+.arrow{
+	height: 16px;
+	margin-right: 4px;
+	margin-bottom: -1px;
+	transition: 0.2s;
+}
+.arrow_active{
+	transform: rotate(90deg);
+}
+
+.slide_menu_active {
+	transform: scaleX(1);
+	opacity: 1;
+}
+
+.poloska1{
+	position: absolute;
+	width: 350px;
+	height: 3px;
+	background-color: white;
+	transform: rotate(-26deg) scaleX(0);
+	bottom: 21.5vh;
+	right: 8vw;
+	z-index: 20;
+	transition: 0.2s;
+	transform-origin: right;
+}
+.poloska2{
+	position: absolute;
+	width: 430px;
+	height: 7px;
+	background-color: white;
+	transform: rotate(-26deg) scaleX(0);
+	bottom: 35vh;
+	right: -3vw;
+	z-index: 20;
+	transition: 0.2s;
+	transform-origin: right;
+}
+.poloska3{
+	position: absolute;
+	width: 230px;
+	height: 5px;
+	background-color: white;
+	transform: rotate(-26deg) scaleX(0);
+	bottom: 29.5vh;
+	right: -3vw;
+	z-index: 20;
+	transition: 0.2s;
+	transform-origin: right;
+}
+.poloska_active{
+	transform: rotate(-26deg) scaleX(1);
+	transition: 0.2s;
+	transform-origin: right;
+}
+.poloska_act{
+	transform: rotate(-26deg) scaleX(0);
+}
+header {
+	width: 100%;
+	margin: 0 auto;
+	height: 20vh;
+}
+.header_inner {
+	width: 100%;
+	max-width: 1300px;
+	display: flex;
+	justify-content: space-between;
+	margin: 0 auto;
+}
+.logo{
+	margin: 20px;
+}
+.menu_btn {
+	margin-top: 70px;
+	margin-right: 20px;
+	width: 56px;
+	height: 36px;
+	display: block;
+	position: relative;
+	z-index: 20;
+}
+.menu_btn span,
+.menu_btn span::before,
+.menu_btn span::after{
+	position: absolute;
+	top: 50%; margin-top: -2px;
+	width: 56px;
+	height: 4px;
+	background-color: white;
+}
+.menu_btn span::before,
+.menu_btn span::after{
+	content: '';
+	display: block;
+	transition: 0.4s;
+}
+.menu_btn span::before{
+	transform: translateY(12px);
+}
+.menu_btn span::after{
+	transform: translateY(-12px);
+}
+.menu_btn_active span{
+	height: 0;
+}
+.menu_btn_active span:before{
+	transform: rotate(45deg);
+	height: 3px;
+	width: 50px;
+}
+.menu_btn_active span:after{
+	transform: rotate(-45deg);
+	height: 3px;
+	width: 50px;
+}
+.menu_btn_active {
+	transform: translate(100px);
+}
+
+@media (max-width: 1450px){
+	.logo{
+		transform: scale(0.9);
+	}
+	.menu_btn{
+		transform: scale(0.9);
+		margin: 0;
+		align-self: center;
+		margin-right: 20px;
+	}
+	.nav_menu{
+		margin: 100px 25px;
+	}
+	.menu_link{
+		margin: 10px 15px;
+	}
+	.poloska1{
+		bottom: 25vh;
+	}
+}
+
+@media (max-width: 900px) {
+	header{
+		height: 15vh;
+		justify-content: center;
+		align-content: center;
+	}
+	.logo{
+		transform: scale(0.7);
+		margin: 0;
+	}
+	.menu_btn{
+		transform: scale(0.8);
+		margin: 0;
+		align-self: center;
+		margin-right: 20px;
+	}
+	.nav_menu{
+		margin: 100px 25px;
+	}
+	.menu_link{
+		margin: 9px 15px;
+	}
+	.poloska1{
+		right: 13vw;
+	}
+}
+
+@media (max-width: 600px) {
+	header{
+		justify-content: center;
+		align-content: center;
+	}
+	.logo{
+		transform: scale(0.6);
+		margin: 0;
+	}
+	.menu_btn{
+		transform: scale(0.7);
+		margin: 0;
+		align-self: center;
+		margin-right: 20px;
+	}
+	.nav_menu{
+		margin: 90px 25px;
+	}
+	.menu_link{
+		margin: 8px 15px;
+	}
+	.poloska1{
+		right: 20vw;
+	}
+} 
+
+/*Container*/
+
+.container {
+   max-width: 1200px;
+   margin: 0 auto;
+   display: flex;
+   align-content: center;
+
+}
+
+
+
+/*Intro*/
+.intro {
+display: flex;
+flex-direction: column;
+justify-content: center;
+width: 100%;
+}
+
+@media (min-width: 900px) and (max-width: 1320px) {
+
+ .intro {
+
+
+ }
+
+ .intro__inner {
+
+ }
+
+.countdown {
+
+
+}
+
+
+}
+
+
+.intro__inner {
+width: 100%;
+max-width: 1200px ;
+margin: 0 auto;
+text-align: center;
+}
+
+
+.intro__suptitle {
+font-size: 30px;
+color: #efdc5c;
+font-family: Tektur Regular;
+text-transform: uppercase;
+text-align: center;
+}
+
+.intro__title {
+
+font-size: 40px;
+text-align: center;
+font-weight: 100;
+color:white ;
+line-height: 1;
+font-family: Gotham Pro Light;
+margin-bottom: 50px;
+margin-top: 20px;
+}
+
+   /*Timer*/
+ .countdown {
+   font-size: 30px;
+   text-align: center;
+   align-items: center;
+   justify-content: center;
+   display: flex;
+   font-weight: 80;
+   color:white ;
+   line-height: 1;
+   font-family: Gotham Pro Light;
+ }
+
+ .time-selection {
+	border-right: 2px #ffffff70 solid;
+
+ }
+
+.time-selection:last-child {
+	border: none;
+}
+
+.count {
+	font-size: 200px;
+}
+
+.units {
+	font-size: 30px;
+}
+
+
+.button {
+    max-width: 405px;
+    margin: 0 auto;
+	margin-top: 90px;
+    justify-self: flex-end;
+} 
+
+.btn {
+   text-align: center;
+   font-family: Gotham Pro Light;  
+   text-transform: uppercase;
+   text-decoration: none;
+   color: #ffe852;
+   font-size: 20px;
+   letter-spacing: 2px;
+   text-shadow: 0px 0px 5px black;
+   border: 2px solid white;
+   border-radius: 10px;
+   padding: 10px 12px 10px 12px;
+   align-items: center;
+   transition: 0.2s;
+   background: url("../css/images/bg.jpg") no-repeat;
+}
+
+.btn:hover {
+   color: #ecdf89;
+	text-shadow: 0 0 2px #fdee8e;
+
+}
